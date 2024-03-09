@@ -60,7 +60,7 @@ class Core:
         return inst
 
     @classmethod
-    def get(cls, entry_id: ConfigEntry.entry_id) -> "Core":  # forward
+    def get(cls, entry_id: str) -> "Core":  # forward
         """Get instance of the Core object based on Config Entry ID"""
         return cls._inst.get(entry_id)
 
